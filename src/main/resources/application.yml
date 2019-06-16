@@ -1,0 +1,11 @@
+spring:
+    datasource:
+        url: jdbc:mysql://localhost:3310/db?useUnicode=true&characterEncoding=utf8&useSSL=false
+        username: ozan
+        password: 1111
+    jpa:
+        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+        database: MYSQL
+        show-sql: true
+        hibernate:
+          ddl-auto: create

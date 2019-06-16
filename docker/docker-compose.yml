@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'db'
+      MYSQL_USER: 'ozan'
+
+      MYSQL_PASSWORD: '1111'
+
+      MYSQL_ROOT_PASSWORD: '1111'
+    ports:
+      - '3310:3306'
+    expose:
+      - '3306'
+    volumes:
+      - my-db:/var/lib/notes-mysql
+volumes:
+  my-db:
+    driver: local
