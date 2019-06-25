@@ -12,6 +12,13 @@ public class Notes {
 
     String name;
 
+    public Notes(){}
+
+    public Notes(String name, Long id) {
+        this.name = name;
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
@@ -26,5 +33,10 @@ public class Notes {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Note {id=%d, name='%s'}", id, name);
     }
 }
