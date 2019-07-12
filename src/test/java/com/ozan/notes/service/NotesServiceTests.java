@@ -1,8 +1,7 @@
-package com.ozan.notes;
+package com.ozan.notes.service;
 
 import com.ozan.notes.domain.Notes;
 import com.ozan.notes.repository.NotesRepository;
-import com.ozan.notes.service.NotesService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
