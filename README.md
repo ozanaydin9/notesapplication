@@ -1,0 +1,1 @@
+The  Spring  Boot  Project  was  created  with  the  Maven  project  managementsystem. Unit tests that control the Rest Service are written with TDD approach.The Rest Service acts as a simple microservice, creating notes, reading creatednotes,  updating  created  notes  and  deleting  created  notes.  Database  MySQLstands up via docker.
