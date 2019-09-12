@@ -1,5 +1,4 @@
 package com.ozan.notes.service;
-
 import com.ozan.notes.domain.Notes;
 import com.ozan.notes.repository.NotesRepository;
 import org.junit.Test;
@@ -8,11 +7,9 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;

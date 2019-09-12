@@ -32,22 +32,11 @@ public class NotesController {
         return notesService.findById(id);
     }
 
-    //id varolan bir id ise name ini update ediyor, id olmayan değer ise yeni not oluşturuyor
 
     @PutMapping(value = "/saveNote", consumes = "application/json")
     @ResponseBody
     public Notes saveOrUpdateNote(@RequestBody Notes notes) {
          return notesService.save(notes);
     }
-
-
-    /*@RequestMapping(value = "/save/id/{id}/name/{name}", method = RequestMethod.PUT)
-    public Notes saveNote (@PathVariable("id")Long id,@PathVariable("name")String name){
-        Notes notes = new Notes();
-        notes.setId(id);
-        notes.setName(name);
-        return notesService.save(notes);
-    }*/
-
 
 }
